@@ -63,71 +63,7 @@ gitのインストーラーをダウンロード
 ウェブブラウザからgit for windowsで検索、
 https://gitforwindows.org
 からgitインストーラーをダウンロード
-ダウンロードしたファイル（Git-2.47.0.2-64-bit.exe）を開く
-
-以下インストーラーのメッセージのメモ
-1. Welcome to the Git Setup Wizard　GNU General Public License　GNU（グヌー）ライセンスの同意　Next
-2. Select Destination Location　インストール先フォルダの選択。　特に問題なければNext
-3. Select Components　Gitに含まれる機能を選択。　デフォルトで問題なければNext
-4. Select Start Menu Folder　スタートメニューのフォルダ選択。　デフォルトで問題なければNext
-5. Choosing the default editor used by Git　Gitで使用するデフォルトエディターの選択
-　　デフォルトではVim、Use Visual Studio Code as Git's default editorを選択、Next
-6. Adjusting the name of initial branch in new repositolies　新しいレポジトリ作成時のブランチ名の選択
-　　Override the default name and specifyで自分で好きな名前を指定でるほうを選択、Next
-7. Adjusting your PATH environment　WindowsのPATH環境変数の設定
-　　デフォルトの真ん中を選択　Git from the command line and also from 3rd-party software: コマンドプロンプトやPowerShellでもGitを使えるようにする。
-8. Choosing the SSH executable　Gitのインストール中にSSH（Secure Shell）接続を行うためのプログラム（実行ファイル）を選択する画面です。これは、リモートリポジトリ（例：GitHub、GitLabなど）との通信にSSHを使う際に使用されるSSHクライアントを指定する設定です。
-　　Use bundled OpenSSH　デフォルトのまま選択。
-　　Gitに付属しているOpenSSHを使用。Git for Windowsに標準で含まれるSSHクライアント。
-　　SSHとは？
-　　**SSH（Secure Shell）**は、安全にリモートサーバーと通信するためのプロトコルです。
-		- Bashはシステム操作やスクリプト実行に使うシェルで、主にローカルで利用します。
-		- SSHはリモートコンピュータやサーバーに安全に接続し、リモートでBashなどのシェルを操作するために使うプロトコルです。
-		- 両者は補完的な関係にあり、SSHを使ってリモートサーバーに接続し、その先でBashを利用することが一般的です。
-	Gitでは、HTTPSまたはSSHを使ってリモートリポジトリと通信しますが、SSHは認証やセキュリティの面でよく利用されます。  
-　　特徴
-	- Gitに付属のOpenSSHを使用するため、追加の設定やソフトウェアのインストールが不要です。
-	- 多くのチュートリアルやドキュメントで説明されている標準的な方法。
-	メリット
-	- 簡単に使える。
-	- 他のソフトに依存しないため、動作が安定しています。
-	デメリット
-	- Windows特有のソフト（例：PuTTY）を使いたい場合には適しません。
-	- 初心者や標準的な使い方をする場合、「Use bundled OpenSSH」を選択するのが最適です。Gitに付属しているSSHクライアントは、GitHubやGitLabとの接続で十分に機能します。
-	サーバーを操作したい場合、まずはSSHを使ってリモートサーバーに接続したら、その先でBashを利用してコードで指示する
-9. Chooseing HTTPS transport backend　リモートリポジトリに接続する際の設定。
-	HTTPS通信の設定
-	画面内容
-	Use the OpenSSL library（OpenSSLを使用）: 独自のSSL証明書管理。
-	Use the native Windows Secure Channel library（Windowsの証明書ストアを使用）: Windowsのセキュリティ設定を利用。
-	デフォルトのUse the OpenSSL libraryを選択、Next
-	ただしAI曰く、初心者には「Use the native Windows Secure Channel library」を選ぶのがおすすめです。
-10. Configuring line ending conversions
-    改行コードの設定
-    画面内容
-    Checkout Windows-style, commit Unix-style: WindowsでCRLF、UnixでLFに変換。
-    Checkout as-is, commit Unix-style: チェックアウト時はそのまま、コミット時にLFに変換。
-    Checkout as-is, commit as-is: 変換しない。
-    一番下の変換しないを選択、Next
-    ただしAI曰く、Windowsユーザーは「Checkout Windows-style, commit Unix-style」が一般的です。選択後、Nextをクリックします。
-11. Configuring the terminal emulator to use with Git Bash　Git bashで使用するターミナルの選択
-	ターミナルエミュレーターの設定
-	画面内容
-	Use MinTTY (default terminal): Git BashでUnix風のターミナルを使用。
-	Use Windows' default console window: Windows標準のコマンドプロンプトを使用。
-	「Use MinTTY (default terminal)」を選ぶのがおすすめです。選択後、Nextをクリックします。
-12. Choose the default behavior of 'git pull'　git pullの挙動の設定
-	特別な理由がなければDefaultのままでNext
-13. Choose a credential helper　資格情報マネージャーの選択
-	特別な理由がなければDefaultのままでNext
-14. Configuring extra options
-	Gitの構成に関する追加オプションの設定
-	Enable file system caching（ファイルシステムキャッシュの有効化）
-	Enable symbolic links（シンボリックリンクを有効化）
-	特別な理由がなければDefaultのままでNext
-15. Configuring experimental options
-	現在開発段階の機能を追加するかどうかの選択、意図しない動作の可能性があるため、チェックをしない
-→インストールを実行
+ダウンロードしたファイル（Git-2.47.0.2-64-bit.exe）を開きインストールを実行
 <br>
 
 
@@ -197,14 +133,7 @@ https://github.com
 
 2. #### ファイルを編集
 今回はVSCodeを用いマークダウン形式で記述  
-その他例：echo"Hello, World!" > hello.txt  
-echo ：文字列を出力するコマンド  
-①　echo "Hello, Git!"　→ ターミナルに "Hello, Git!" と表示  
-②　echo "Hello, Git!" > file1.txt　→リダイレクト記号（>）があると  
--  指定したファイルに新しく内容を書き込みます（既存の内容は上書きされます）。  
--  ファイルが存在しない場合は、新しく作成されます。
-③　echo "Another line" >> file1.txt　→>>だと、既存のファイルに追記します（上書きしません）。
-file1.txt の最後に "Another line" が追加されます。
+
 
 3. #### ファイルの変更をステージングエリアへ追加
 git add ファイル名  
@@ -247,3 +176,101 @@ git push -u origin main　※プッシュする（はじめてプッシュする
 つまり次回からは短縮コマンド git pushでOK。
 
 GitHubのブラウザをリロードし、プッシュされたか確認
+
+---
+---
+
+<br>
+
+以下メモ  
+
+<br>
+
+#### gitインストーラーのメッセージ
+1. Welcome to the Git Setup Wizard　GNU General Public License　GNU（グヌー）ライセンスの同意　Next
+2. Select Destination Location　インストール先フォルダの選択。　特に問題なければNext
+3. Select Components　Gitに含まれる機能を選択。　デフォルトで問題なければNext
+4. Select Start Menu Folder　スタートメニューのフォルダ選択。　デフォルトで問題なければNext
+5. Choosing the default editor used by Git　Gitで使用するデフォルトエディターの選択
+　　デフォルトではVim、Use Visual Studio Code as Git's default editorを選択、Next
+6. Adjusting the name of initial branch in new repositolies　新しいレポジトリ作成時のブランチ名の選択
+　　Override the default name and specifyで自分で好きな名前を指定でるほうを選択、Next
+7. Adjusting your PATH environment　WindowsのPATH環境変数の設定
+　　デフォルトの真ん中を選択　Git from the command line and also from 3rd-party software: コマンドプロンプトやPowerShellでもGitを使えるようにする。
+8. Choosing the SSH executable　Gitのインストール中にSSH（Secure Shell）接続を行うためのプログラム（実行ファイル）を選択する画面です。これは、リモートリポジトリ（例：GitHub、GitLabなど）との通信にSSHを使う際に使用されるSSHクライアントを指定する設定です。
+　　Use bundled OpenSSH　デフォルトのまま選択。
+　　Gitに付属しているOpenSSHを使用。Git for Windowsに標準で含まれるSSHクライアント。
+　　SSHとは？
+　　**SSH（Secure Shell）**は、安全にリモートサーバーと通信するためのプロトコルです。
+		- Bashはシステム操作やスクリプト実行に使うシェルで、主にローカルで利用します。
+		- SSHはリモートコンピュータやサーバーに安全に接続し、リモートでBashなどのシェルを操作するために使うプロトコルです。
+		- 両者は補完的な関係にあり、SSHを使ってリモートサーバーに接続し、その先でBashを利用することが一般的です。
+	Gitでは、HTTPSまたはSSHを使ってリモートリポジトリと通信しますが、SSHは認証やセキュリティの面でよく利用されます。  
+　　特徴
+	- Gitに付属のOpenSSHを使用するため、追加の設定やソフトウェアのインストールが不要です。
+	- 多くのチュートリアルやドキュメントで説明されている標準的な方法。
+	メリット
+	- 簡単に使える。
+	- 他のソフトに依存しないため、動作が安定しています。
+	デメリット
+	- Windows特有のソフト（例：PuTTY）を使いたい場合には適しません。
+	- 初心者や標準的な使い方をする場合、「Use bundled OpenSSH」を選択するのが最適です。Gitに付属しているSSHクライアントは、GitHubやGitLabとの接続で十分に機能します。
+	サーバーを操作したい場合、まずはSSHを使ってリモートサーバーに接続したら、その先でBashを利用してコードで指示する
+9. Chooseing HTTPS transport backend　リモートリポジトリに接続する際の設定。
+	HTTPS通信の設定
+	画面内容
+	Use the OpenSSL library（OpenSSLを使用）: 独自のSSL証明書管理。
+	Use the native Windows Secure Channel library（Windowsの証明書ストアを使用）: Windowsのセキュリティ設定を利用。
+	デフォルトのUse the OpenSSL libraryを選択、Next
+	ただしAI曰く、初心者には「Use the native Windows Secure Channel library」を選ぶのがおすすめです。
+10. Configuring line ending conversions
+    改行コードの設定
+    画面内容
+    Checkout Windows-style, commit Unix-style: WindowsでCRLF、UnixでLFに変換。
+    Checkout as-is, commit Unix-style: チェックアウト時はそのまま、コミット時にLFに変換。
+    Checkout as-is, commit as-is: 変換しない。
+    一番下の変換しないを選択、Next
+    ただしAI曰く、Windowsユーザーは「Checkout Windows-style, commit Unix-style」が一般的です。選択後、Nextをクリックします。
+11. Configuring the terminal emulator to use with Git Bash　Git bashで使用するターミナルの選択
+	ターミナルエミュレーターの設定
+	画面内容
+	Use MinTTY (default terminal): Git BashでUnix風のターミナルを使用。
+	Use Windows' default console window: Windows標準のコマンドプロンプトを使用。
+	「Use MinTTY (default terminal)」を選ぶのがおすすめです。選択後、Nextをクリックします。
+12. Choose the default behavior of 'git pull'　git pullの挙動の設定
+	特別な理由がなければDefaultのままでNext
+13. Choose a credential helper　資格情報マネージャーの選択
+	特別な理由がなければDefaultのままでNext
+14. Configuring extra options
+	Gitの構成に関する追加オプションの設定
+	Enable file system caching（ファイルシステムキャッシュの有効化）
+	Enable symbolic links（シンボリックリンクを有効化）
+	特別な理由がなければDefaultのままでNext
+15. Configuring experimental options
+	現在開発段階の機能を追加するかどうかの選択、意図しない動作の可能性があるため、チェックをしない
+
+
+<br>
+
+#### echoコマンドを使ったテキストファイル作成方法
+例：echo"Hello, World!" > hello.txt  
+echo ：文字列を出力するコマンド  
+1. echo "Hello, Git!"　→ ターミナルに "Hello, Git!" と表示  
+2. echo "Hello, Git!" > file1.txt　→リダイレクト記号（>）があると  
+-  指定したファイルに新しく内容を書き込みます（既存の内容は上書きされます）。  
+-  ファイルが存在しない場合は、新しく作成されます。
+
+3. echo "Another line" >> file1.txt　→>>だと、既存のファイルに追記します（上書きしません）。
+file1.txt の最後に "Another line" が追加されます。
+
+<br>
+
+#### Powershellについて
+Powershellで ls -aとするとエラー  
+PowerShellはUnix系システムと同じコマンドを模倣するように設計されていますが、実際にはWindows環境に特化しているため、完全に同じ挙動にはなりません。  
+そのため、-Forceや-AttributesのようなPowerShell特有のオプションを覚えて使うことが重要です。
+
+---
+以上
+
+
