@@ -41,6 +41,8 @@ MarkdownはGitHubやGitLabなどのプラットフォーム、ブログ、Wiki�
 ---
 
 ### 4.
-1～3を1つのテキストREADME.mdとしてまとめ、自分のGitHubアカウントにmau-j2nという名前のレポジトリを作成し "https://github.com/kanoxi/mau-j2n"で閲覧できるように対応。
+1～3を1つのテキストREADME.mdとしてまとめ、自分のGitHubアカウントにmau-j2nという名前のレポジトリを作成し
+https://github.com/kanoxi/mau-j2n
+で閲覧できるように対応。
 
 
